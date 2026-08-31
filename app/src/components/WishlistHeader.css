@@ -1,0 +1,94 @@
+.wishlist-header {
+  display: flex;
+  align-items: center;
+  padding: 10px 12px;
+  background: #fff;
+  border-bottom: 1px solid #eaeaec;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.back-btn {
+  border: none;
+  background: none;
+  padding: 4px 8px 4px 0;
+  cursor: pointer;
+  color: #282c3f;
+  display: flex;
+  align-items: center;
+}
+
+.title-block {
+  flex: 1;
+  text-align: center;
+  margin-left: -28px;
+}
+
+.title-block h1 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: #282c3f;
+  letter-spacing: -0.2px;
+}
+
+.title-block p {
+  margin: 1px 0 0;
+  font-size: 11px;
+  color: #94969f;
+  font-weight: 400;
+}
+
+.header-actions {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+}
+
+.icon-btn {
+  border: none;
+  background: none;
+  padding: 8px;
+  cursor: pointer;
+  position: relative;
+  color: #282c3f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-btn.active {
+  color: #ff3f6c;
+}
+
+.badge-dot {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 6px;
+  height: 6px;
+  background: #ff3f6c;
+  border-radius: 50%;
+}
+
+.bag-btn {
+  position: relative;
+}
+
+.bag-badge {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  background: #ff3f6c;
+  color: #fff;
+  font-size: 8px;
+  font-weight: 700;
+  min-width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid #fff;
+}
