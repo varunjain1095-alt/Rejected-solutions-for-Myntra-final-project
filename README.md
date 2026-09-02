@@ -34,6 +34,22 @@ Click **Take tour** to replay manually.
 
 See `frictionpoint.md` for step-by-step reviewer test cases (4 per solution).
 
-## After local use
+## Deploy (Railway)
 
-Revert Cursor **Run Everything** to **Auto-review** (see `REVERT_CURSOR_SETTINGS.md`).
+See **[DEPLOY.md](DEPLOY.md)** for full steps.
+
+```bash
+npm run preview:prod   # local production test on :3001
+```
+
+**Deep links** (replace `YOUR_DOMAIN`):
+
+| Solution | URL |
+|----------|-----|
+| 1. Filtering | `https://YOUR_DOMAIN/?s=filter` |
+| 2. Chatbot | `https://YOUR_DOMAIN/?s=chat` |
+| 3. Priority | `https://YOUR_DOMAIN/?s=priority` |
+| 4. Info Tiles | `https://YOUR_DOMAIN/?s=tiles` |
+| 5. Compare | `https://YOUR_DOMAIN/?s=compare` |
+
+Set `OPENAI_API_KEY` on Railway for free-form chat.

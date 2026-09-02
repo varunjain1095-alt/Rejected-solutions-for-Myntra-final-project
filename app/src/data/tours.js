@@ -1,4 +1,4 @@
-/** Each solution tour: 1) where the feature lives 2) how to use it 3) one friction test */
+/** Each solution tour: 1) where the feature lives 2) how to use it 3) all friction points */
 const TOUR_STEP_DEFS = {
   filter: [
     {
@@ -16,11 +16,12 @@ const TOUR_STEP_DEFS = {
       placement: 'top',
     },
     {
-      target: '.tour-ready-to-buy',
-      title: 'Friction test',
+      target: '.tour-product-grid',
+      title: 'Friction points',
       content:
-        'Try this: turn on Ready to buy, tap Apply. Filters stack with AND logic and the list often empties. You tuned specs, not memory.',
+        '1. Attributes, not memory: Smart filters show brand/price/rating only; no "why I added this"\n2. Over-filtering: Ready to buy stacks filters and the list empties\n3. Wrong winner: Sort Highest Discount puts cheap irrelevant items on top\n4. Filter tinkering: Count jumps (42→18→6→0); busy tuning filters, no recall help',
       placement: 'top',
+      scrollTarget: '.tour-scroll-root',
     },
   ],
   chat: [
@@ -40,9 +41,9 @@ const TOUR_STEP_DEFS = {
     },
     {
       target: '.tour-product-grid',
-      title: 'Friction test',
+      title: 'Friction points',
       content:
-        'After best deals you get a shortlist of cheap items. Every card is still specs only. No row explains why you saved it.',
+        '1. Blank / vague prompt: "Tell me what you want" but you do not know what you are missing\n2. Multi-turn tax: something for a trip leads to 2+ follow-ups before any results; still 42 items\n3. Confident wrong filter: best deals surfaces cheap items (Tokyo Talkies, Biotic powders, sandals)\n4. No recontext: Even narrowed to 5 items, every card is specs only',
       placement: 'top',
       scrollTarget: '.tour-scroll-root',
     },
@@ -66,9 +67,9 @@ const TOUR_STEP_DEFS = {
     },
     {
       target: '.tour-item-count',
-      title: 'Friction test',
+      title: 'Friction points',
       content:
-        'Tag several items, then check the header. It still says 42 items. Reordering did not remove any decisions.',
+        '1. Looks convincing: Soon/Maybe/Later sections feel productive at first\n2. Same evaluation load: Header still 42 items; nothing removed\n3. Priority fatigue: Tagging 42 items is meta-work; Undecided pile stays huge\n4. No recontext at top: Top Buy soon card still brand/price/specs only',
       placement: 'bottom',
     },
   ],
@@ -91,9 +92,9 @@ const TOUR_STEP_DEFS = {
     },
     {
       target: '.tour-product-grid',
-      title: 'Friction test',
+      title: 'Friction points',
       content:
-        'Jump categories (Sarees, Sandals, Beauty). Same size and return rows on a saree and lip gloss. Static facts, not why you saved it.',
+        '1. Visual clutter: Every card is taller; 42 items harder to scan\n2. Uniform sameness: Same Sizes + Returns block on every card; items blur together\n3. Static irrelevance: Saree, sandals, lip gloss get identical treatment\n4. No recontext: Size/returns are purchase facts, not why you saved it',
       placement: 'top',
       scrollTarget: '.tour-scroll-root',
     },
@@ -116,9 +117,9 @@ const TOUR_STEP_DEFS = {
     },
     {
       target: '.tour-compare-table',
-      title: 'Friction test',
+      title: 'Friction points',
       content:
-        'This table compares a saree and sandals. Price and discount rows imply a winner across unrelated categories. No column for why you saved either item.',
+        '1. Sounds obvious, feels smart: Compare flow looks like the "right" wishlist feature\n2. Spec comparison, no intent: Table has price/rating/discount; no "why saved" column\n3. Apples to oranges: Can compare saree vs sandals; UI still picks a "winner"\n4. More evaluation, not less: Spec sheet adds load; decision is not easier',
       placement: 'top',
     },
   ],

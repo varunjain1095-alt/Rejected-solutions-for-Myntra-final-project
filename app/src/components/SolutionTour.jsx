@@ -52,8 +52,8 @@ export default function SolutionTour({ solution, run, onFinish, prepareStep }) {
         },
         tooltip: {
           fontSize: 14,
-          lineHeight: 1.45,
-          maxWidth: 320,
+          lineHeight: 1.5,
+          maxWidth: 380,
         },
         tooltipTitle: {
           fontSize: 15,

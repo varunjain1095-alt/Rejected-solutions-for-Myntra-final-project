@@ -155,9 +155,13 @@ export default function WishlistDemo() {
       await nextFrame();
 
       if (solutionId === 'filter') {
-        if (index >= 1) {
+        if (index === 1) {
           flushSync(() => setFilterOpen(true));
           await waitForSelector('.tour-sort-select');
+        }
+        if (index === 2) {
+          flushSync(() => setFilterOpen(false));
+          await waitForSelector('.tour-product-grid');
         }
         return;
       }
@@ -170,9 +174,9 @@ export default function WishlistDemo() {
         if (index === 2) {
           flushSync(() => {
             setChatOpen(false);
-            setHighlightIds(['4', '40', '41', '31', '18']);
+            setHighlightIds([]);
           });
-          await waitForSelector(targetSelector);
+          await waitForSelector('.tour-product-grid');
         }
         return;
       }

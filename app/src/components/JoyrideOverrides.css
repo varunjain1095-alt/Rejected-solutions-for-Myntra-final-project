@@ -12,7 +12,17 @@
 }
 
 .react-joyride__tooltip {
-  max-width: 320px !important;
+  max-width: 360px !important;
+}
+
+#react-joyride-step-2 .react-joyride__tooltip,
+.react-joyride__tooltip[data-joyride-step='2'] {
+  max-width: 380px !important;
+}
+
+.react-joyride__tooltip-content {
+  white-space: pre-line;
+  line-height: 1.5;
 }
 
 .react-joyride__tooltip-title {
