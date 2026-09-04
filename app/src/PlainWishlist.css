@@ -1,0 +1,36 @@
+.plain-wishlist-app {
+  min-height: 100vh;
+  background: #eef0f3;
+}
+
+.plain-wishlist-app .mobile-stage {
+  min-height: 100vh;
+}
+
+.plain-wishlist-app .quick-pills {
+  display: flex;
+  gap: 8px;
+  padding: 0 12px 8px;
+}
+
+.plain-wishlist-app .pill {
+  flex: 1;
+  border: 1px solid #eaeaec;
+  background: #fff;
+  border-radius: 4px;
+  padding: 9px 8px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #282c3f;
+  cursor: default;
+}
+
+.plain-wishlist-app .wishlist-main {
+  padding: 0 6px 24px;
+}
+
+.plain-wishlist-app .product-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
