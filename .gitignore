@@ -5,6 +5,8 @@ app/node_modules/
 !.env.example
 dist/
 app/dist/
+activity-wishlist/dist/
+activity-wishlist/node_modules/
 .DS_Store
 *.log
 .cursor/
