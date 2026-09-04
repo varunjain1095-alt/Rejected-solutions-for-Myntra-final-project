@@ -1,0 +1,32 @@
+/* Joyride renders in a portal; keep above the phone frame and overlays */
+.__floater__open {
+  z-index: 10060 !important;
+}
+
+.react-joyride__overlay {
+  z-index: 10040 !important;
+}
+
+.react-joyride__spotlight {
+  z-index: 10045 !important;
+}
+
+.react-joyride__tooltip {
+  max-width: 360px !important;
+}
+
+#react-joyride-step-2 .react-joyride__tooltip,
+.react-joyride__tooltip[data-joyride-step='2'] {
+  max-width: 380px !important;
+}
+
+.react-joyride__tooltip-content {
+  white-space: pre-line;
+  line-height: 1.5;
+}
+
+.react-joyride__tooltip-title {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}

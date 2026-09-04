@@ -1,9 +1,9 @@
-import { products, TOTAL_ITEMS } from '@app/data/products';
-import WishlistHeader from '@app/components/WishlistHeader';
-import AddressBar from '@app/components/AddressBar';
-import CategoryFilters from '@app/components/CategoryFilters';
-import ProductCard from '@app/components/ProductCard';
-import MobilePhone from '@app/components/MobilePhone';
+import { products, TOTAL_ITEMS } from './data/products';
+import WishlistHeader from './components/WishlistHeader';
+import AddressBar from './components/AddressBar';
+import CategoryFilters from './components/CategoryFilters';
+import ProductCard from './components/ProductCard';
+import MobilePhone from './components/MobilePhone';
 import './Wishlist.css';
 
 export default function Wishlist() {

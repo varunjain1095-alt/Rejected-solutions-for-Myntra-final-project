@@ -1,0 +1,29 @@
+.address-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 10px 12px;
+  padding: 10px 12px;
+  background: #f3efff;
+  border-radius: 6px;
+  font-size: 11px;
+}
+
+.pin {
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.address {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #282c3f;
+  font-weight: 500;
+}
+
+.chevron {
+  color: #94969f;
+  font-size: 12px;
+}
